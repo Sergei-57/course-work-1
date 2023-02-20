@@ -1,0 +1,41 @@
+.services {
+  &__content {
+    @include flex-box;
+  }
+
+  &__content_separator {
+    margin-bottom: 5.5rem;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  &__col {
+    display: flex;
+    gap: 1.875rem;
+  }
+
+  &__col_profession {
+    max-width: 16.875rem;
+  }
+
+  &__col_profession-name {
+    font-weight: 700;
+    font-size: $font-size-md;
+    text-transform: uppercase;
+    color: $color-black;
+    padding: 0.62rem 0;
+  }
+
+  &__col_profession-description {
+    font-size: $font-size-sm;
+    color: $color-black;
+    padding: 1.04rem 0;
+    margin-bottom: 7.375rem;
+  }
+}

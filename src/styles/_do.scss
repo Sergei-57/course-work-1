@@ -1,0 +1,89 @@
+.do {
+  &__content {
+    @include flex-box;
+  }
+
+  &__service {
+    display: flex;
+    gap: 1.875rem;
+    margin-bottom: 7.125rem;
+  }
+
+  &__service_image {}
+
+  &__service_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+  }
+
+  &__service_profession {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C6CBCD;
+  }
+
+  &__service_profession-wrap {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  &__service_profession-icon {
+    margin-left: 1.125rem;
+    object-fit: cover;
+    height: 50%;
+
+  }
+
+  &__service_profession-name {
+    font-weight: 700;
+    font-size: $font-size-md;
+    text-transform: uppercase;
+    color: $color-black;
+    padding: 1.9rem 0;
+  }
+
+  &__service_profession-description {
+    display: none;
+    font-size: $font-size-sm;
+    color: $color-black;
+    padding-left: 1.375rem;
+    border: 1px solid #C6CBCD;
+  }
+
+  .profession-description_active {
+    display: block;
+  }
+
+  &__footer {
+    background: #F8F8F8;
+  }
+
+  &__footer_content {
+    display: flex;
+    gap: 1.875rem;
+
+  }
+
+  &__footer_icon {
+    margin: 2.625rem 0 2.625rem 0;
+  }
+
+  &__footer_com {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3125rem;
+    margin: 2.625rem 0 2.625rem 0;
+  }
+
+  &__footer_wrap {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  &__footer_separator {
+    height: 4px;
+  }
+}

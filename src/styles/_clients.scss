@@ -1,0 +1,73 @@
+.clients {
+  background: url(/src/images/people.png);
+  position: relative;
+
+  &__content {
+    @include flex-box;
+    position: relative;
+  }
+
+  &__content_separator {
+    margin-bottom: 2.625rem;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 2.625rem;
+  }
+
+  &__wrap-block {
+    display: flex;
+    gap: 3.125rem;
+  }
+
+  &__wrap-block_image {
+    height: 50%;
+  }
+
+  &__wrap-block_column {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+  }
+
+  &__wrap-block_column-name {
+    font-weight: 700;
+    font-size: $font-size-md;
+    text-transform: uppercase;
+    color: $color-black;
+    padding: 0.65rem 0;
+  }
+
+  &__wrap-block_column-profession {
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+
+  &__wrap-block_column-separator {
+    max-width: 70px;
+    border: 4px solid #F38281;
+    margin: 2rem 0;
+  }
+
+  &__wrap-block_column-text {
+    font-size: $font-size-sm;
+    color: $color-black;
+  }
+}
+
+.clients:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+}

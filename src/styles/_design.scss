@@ -1,0 +1,48 @@
+.design {
+  background: url(/src/images/design.png);
+  position: relative;
+
+  &__content {
+    @include flex-box;
+    position: relative;
+  }
+
+  &__content_separator {
+    margin-bottom: 3.6875rem;
+  }
+
+  &__device {
+    position: relative;
+  }
+
+  &__device_tablet-bg {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 3.5625rem;
+  }
+
+  &__device_tablet-content {
+    z-index: 1;
+    position: absolute;
+    top: 1rem;
+    left: 16rem;
+  }
+
+  &__device_phone {
+    z-index: 3;
+    position: absolute;
+    top: 13.1rem;
+    right: 12.5rem;
+  }
+}
+
+.design:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
