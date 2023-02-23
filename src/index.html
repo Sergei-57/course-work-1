@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,500&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="./styles/app.scss">
 </head>
 
 <body>
@@ -81,22 +81,34 @@
           <div class="about__content_team-project">
             <img class="about__content_team-image" src="./images/about-1.png" alt="">
             <div class="about__content_team-bg">
-              <img class="about__content_team-icon" src="./images/about-icons.png" alt="">
-              <h6 class="about__content_team-text">Super team</h6>
+              <a class="about__content_team-link" href="#">
+                <svg aria-hidden="true" height="40" width="40" class="about__content_team-icon">
+                  <use href="./images/about-icons.svg#aboutIcon"></use>
+                </svg>
+                <h6 class="about__content_team-text">Super team</h6>
+              </a>
             </div>
           </div>
           <div class="about__content_team-project">
             <img class="about__content_team-image" src="./images/about-2.png" alt="">
             <div class="about__content_team-bg">
-              <img class="about__content_team-icon" src="./images/about-icons.png" alt="">
-              <h6 class="about__content_team-text">Super team</h6>
+              <a class="about__content_team-link" href="#">
+                <svg aria-hidden="true" height="40" width="40" class="about__content_team-icon">
+                  <use href="./images/about-icons.svg#aboutIcon"></use>
+                </svg>
+                <h6 class="about__content_team-text">Super team</h6>
+              </a>
             </div>
           </div>
           <div class="about__content_team-project">
             <img class="about__content_team-image" src="./images/about-3.png" alt="">
             <div class="about__content_team-bg">
-              <img class="about__content_team-icon" src="./images/about-icons.png" alt="">
-              <h6 class="about__content_team-text">Super team</h6>
+              <a class="about__content_team-link" href="#">
+                <svg aria-hidden="true" height="40" width="40" class="about__content_team-icon">
+                  <use href="./images/about-icons.svg#aboutIcon"></use>
+                </svg>
+                <h6 class="about__content_team-text">Super team</h6>
+              </a>
             </div>
           </div>
         </div>
@@ -215,47 +227,47 @@
             facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra
             dolor sit. Aliquet congue sit fermentum risus feugiat.</h5>
         </div>
-        <div class="do__service">
-          <img class="do__service_image" src="./images/do.png" alt="">
-          <div class="do__service_wrapper">
-            <div class="do__service_profession">
-              <div class="do__service_profession-wrap">
-                <img class="do__service_profession-icon" src="./images/do-icons-1.png" alt="">
-                <h4 class="do__service_profession-name">photography</h4>
-              </div>
-              <h6 class="do__service_profession-description profession-description_active">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Eros,
-                nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat
-                sagittis
-                ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus.
-                Justo,
-                id ac facilisis fringilla fermentum sed nunc aenean.</h6>
+        <div class="details-service">
+          <img class="details-service__image" src="./images/details-service/details-service.png" alt="">
+          <div class="details-service__row">
+            <div class="details-service__col">
+              <details class="details-service__summary">
+                <summary class="details-service__summary_prof">photography</summary>
+                <p class="details-service__summary_description details-service__summary_description-active">Lorem ipsum
+                  dolor sit amet,
+                  consectetur adipiscing elit. Eros,
+                  nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat
+                  sagittis
+                  ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus.
+                  Justo,
+                  id ac facilisis fringilla fermentum sed nunc aenean.</p>
+              </details>
             </div>
-            <div class="do__service_profession">
-              <div class="do__service_profession-wrap">
-                <img class="do__service_profession-icon" src="./images/do-icons-2.png" alt="">
-                <h4 class="do__service_profession-name">creativity</h4>
-              </div>
-              <h6 class="do__service_profession-description">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Eros,
-                nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat
-                sagittis
-                ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus.
-                Justo,
-                id ac facilisis fringilla fermentum sed nunc aenean.</h6>
+            <div class="details-service__col">
+              <details class="details-service__summary">
+                <summary class="details-service__summary_prof">creativity</summary>
+                <p class="details-service__summary_description details-service__summary_description-active">Lorem ipsum
+                  dolor sit amet,
+                  consectetur adipiscing elit. Eros,
+                  nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat
+                  sagittis
+                  ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus.
+                  Justo,
+                  id ac facilisis fringilla fermentum sed nunc aenean.</p>
+              </details>
             </div>
-            <div class="do__service_profession">
-              <div class="do__service_profession-wrap">
-                <img class="do__service_profession-icon" src="./images/do-icons-3.png" alt="">
-                <h4 class="do__service_profession-name">web design</h4>
-              </div>
-              <h6 class="do__service_profession-description">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Eros,
-                nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat
-                sagittis
-                ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus.
-                Justo,
-                id ac facilisis fringilla fermentum sed nunc aenean.</h6>
+            <div class="details-service__col">
+              <details class="details-service__summary">
+                <summary class="details-service__summary_prof">web design</summary>
+                <p class="details-service__summary_description details-service__summary_description-active">Lorem ipsum
+                  dolor sit amet,
+                  consectetur adipiscing elit. Eros,
+                  nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat
+                  sagittis
+                  ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus.
+                  Justo,
+                  id ac facilisis fringilla fermentum sed nunc aenean.</p>
+              </details>
             </div>
           </div>
         </div>
@@ -263,6 +275,9 @@
       <div class="do__footer">
         <div class="container">
           <div class="do__footer_content">
+            <svg aria-hidden="true" height="84" width="84" class="do__footer_icons">
+              <use href="./images/left.svg#leftIcon"></use>
+            </svg>
             <img class="do__footer_icon" src="./images/do-icons-footer.png" alt="">
             <div class="do__footer_com">
               <h6 class="do__footer_comment comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec
@@ -274,6 +289,9 @@
                 <h5 class="do__footer_name footer_name">Jon Doe</h5>
               </div>
             </div>
+            <svg aria-hidden="true" height="84" width="84" class="do__footer_icons">
+              <use href="./images/right.svg#rightIcon"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -467,6 +485,9 @@
       <div class="work__footer">
         <div class="container">
           <div class="work__footer_content">
+            <svg aria-hidden="true" height="84" width="84" class="work__footer_icons">
+              <use href="./images/left.svg#leftIcon"></use>
+            </svg>
             <img class="work__footer_image" src="./images/work-footer.png" alt="">
             <div class="work__footer_com">
               <h6 class="work__footer_comment comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
@@ -477,6 +498,9 @@
                 <h5 class="work__footer_name footer_name">James Philips</h5>
               </div>
             </div>
+            <svg aria-hidden="true" height="84" width="84" class="work__footer_icons">
+              <use href="./images/right.svg#rightIcon"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -552,14 +576,16 @@
         <div class="blog__articles">
           <div class="blog__articles_box">
             <div class="blog__articles_box-content">
-              <img class="blog__articles_box-image" src="./images/blog-1.png" alt="">
-              <h5 class="blog__articles_box-data">28 <span class="blog-text">feb</span></h5>
               <a class="blog__articles_box-list" href="#">
+                <img class="blog__articles_box-image" src="./images/blog-1.png" alt="">
+                <h5 class="blog__articles_box-data">28 <span class="blog-text">feb</span></h5>
                 <h4 class="blog__articles_box-title">Lorem ipsum dolor sit amet</h4>
+                <h5 class="blog__articles_box-tetx">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque
+                  quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est
+                  leo
+                  cursus.</h5>
               </a>
-              <h5 class="blog__articles_box-tetx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo
-                cursus.</h5>
             </div>
             <div class="blog__articles_box-item">
               <a href="#" class="blog__articles_box-icon">
@@ -572,14 +598,16 @@
           </div>
           <div class="blog__articles_box">
             <div class="blog__articles_box-content">
-              <img class="blog__articles_box-image" src="./images/blog-2.png" alt="">
-              <h5 class="blog__articles_box-data">28 <span class="blog-text">feb</span></h5>
               <a class="blog__articles_box-list" href="#">
+                <img class="blog__articles_box-image" src="./images/blog-2.png" alt="">
+                <h5 class="blog__articles_box-data">28 <span class="blog-text">feb</span></h5>
                 <h4 class="blog__articles_box-title">Lorem ipsum dolor sit amet</h4>
+                <h5 class="blog__articles_box-tetx">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque
+                  quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est
+                  leo
+                  cursus.</h5>
               </a>
-              <h5 class="blog__articles_box-tetx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo
-                cursus.</h5>
             </div>
             <div class="blog__articles_box-item">
               <a href="#" class="blog__articles_box-icon">
@@ -592,14 +620,16 @@
           </div>
           <div class="blog__articles_box">
             <div class="blog__articles_box-content">
-              <img class="blog__articles_box-image" src="./images/blog-3.png" alt="">
-              <h5 class="blog__articles_box-data">28 <span class="blog-text">feb</span></h5>
               <a class="blog__articles_box-list" href="#">
+                <img class="blog__articles_box-image" src="./images/blog-3.png" alt="">
+                <h5 class="blog__articles_box-data">28 <span class="blog-text">feb</span></h5>
                 <h4 class="blog__articles_box-title">Lorem ipsum dolor sit amet</h4>
+                <h5 class="blog__articles_box-tetx">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque
+                  quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est
+                  leo
+                  cursus.</h5>
               </a>
-              <h5 class="blog__articles_box-tetx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo
-                cursus.</h5>
             </div>
             <div class="blog__articles_box-item">
               <a href="#" class="blog__articles_box-icon">
@@ -628,7 +658,9 @@
     <div class="container">
       <div class="footer__row">
         <div class="footer__col">
-          <img src="./images/footer-logo.png" alt="" class="footer__col_logo">
+          <a class="footer__logo-link" href="#">
+            <img src="./images/footer-logo.png" alt="" class="footer__col_logo">
+          </a>
           <h5 class="footer__col_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin
             varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</h5>
           <h6 class="footer__col_subscribers">15k followers</h6>
@@ -709,20 +741,31 @@
         </div>
         <div class="footer__col">
           <h4 class="footer__col_title">instagram</h4>
-          <a href="#" class="footer__col_link">
-            <div class="footer__col_social">
-              <img class="footer__col_social-image footer__col_social-image-1" src="./images/footer-insta-1.png" alt="">
-              <img class="footer__col_social-image footer__col_social-image-2" src="./images/footer-insta-2.png" alt="">
-              <img class="footer__col_social-image footer__col_social-image-3" src="./images/footer-insta-3.png" alt="">
-              <img class="footer__col_social-image footer__col_social-image-4" src="./images/footer-insta-4.png" alt="">
-              <img class="footer__col_social-image footer__col_social-image-5" src="./images/footer-insta-5.png" alt="">
-              <img class="footer__col_social-image footer__col_social-image-6" src="./images/footer-insta-6.png" alt="">
-              <img class="footer__col_social-image footer__col_social-image-7" src="./images/footer-insta-7.png" alt="">
-              <img class="footer__col_social-image footer__col_social-image-8" src="./images/footer-insta-8.png" alt="">
-              <img class="footer__col_social-image footer__col_social-image-9" src="./images/footer-insta-9.png" alt="">
-            </div>
-            <h5 class="footer__col_social-item">see all photos</h5>
-          </a>
+          <div class="footer__col_link">
+            <a href="#" class="footer__col_link-item">
+              <div class="footer__col_social">
+                <img class="footer__col_social-image footer__col_social-image-1" src="./images/footer-insta-1.png"
+                  alt="">
+                <img class="footer__col_social-image footer__col_social-image-2" src="./images/footer-insta-2.png"
+                  alt="">
+                <img class="footer__col_social-image footer__col_social-image-3" src="./images/footer-insta-3.png"
+                  alt="">
+                <img class="footer__col_social-image footer__col_social-image-4" src="./images/footer-insta-4.png"
+                  alt="">
+                <img class="footer__col_social-image footer__col_social-image-5" src="./images/footer-insta-5.png"
+                  alt="">
+                <img class="footer__col_social-image footer__col_social-image-6" src="./images/footer-insta-6.png"
+                  alt="">
+                <img class="footer__col_social-image footer__col_social-image-7" src="./images/footer-insta-7.png"
+                  alt="">
+                <img class="footer__col_social-image footer__col_social-image-8" src="./images/footer-insta-8.png"
+                  alt="">
+                <img class="footer__col_social-image footer__col_social-image-9" src="./images/footer-insta-9.png"
+                  alt="">
+              </div>
+              <h5 class="footer__col_social-item">see all photos</h5>
+            </a>
+          </div>
         </div>
       </div>
       <h5 class="footer__copyright">Copyright © 2021 mogo. All Rights Reserved</h5>

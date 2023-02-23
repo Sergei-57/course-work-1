@@ -1,13 +1,9 @@
-// Variables
-$color-white: #FFFFFF;
-$color-black: #2D3033;
-$font-size-sm: 1.125rem; //18px
-$font-size-md: 1.5rem; //24px
-
-
 // Сброс стилей
 @import "./normalize";
 @import "./reset";
+
+// Variables
+@import "./variables";
 
 // Base
 @import "./scaffold";
@@ -18,7 +14,9 @@ $font-size-md: 1.5rem; //24px
 @import "./about";
 @import "./services";
 @import "./design";
+@import "./detalis";
 @import "./do";
+@import "./social-icon";
 @import "./team";
 @import "./work";
 @import "./clients";

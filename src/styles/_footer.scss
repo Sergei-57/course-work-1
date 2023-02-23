@@ -162,6 +162,10 @@
     grid-area: footer_image-9;
   }
 
+  &__col_link:hover {
+    transform: scale(0.9, 0.9);
+  }
+
   &__col_social-item {
     font-size: 0.8125rem;
     text-decoration-line: underline;
