@@ -10,11 +10,14 @@
 @import "./mixins";
 
 // Components
+@import "./logo";
+@import "./nav";
 @import "./header";
+@import "./title-content";
 @import "./about";
 @import "./services";
 @import "./design";
-@import "./detalis";
+@import "./details";
 @import "./do";
 @import "./social-icon";
 @import "./team";

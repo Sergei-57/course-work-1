@@ -20,60 +20,60 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <div class="header__nav">
-        <div class="header__nav_logo">
-          <a href="#">
-            <img class="logo" src="./images/logo.png" alt="logo">
-          </a>
+      <div class="header__top">
+        <div class="header__top-inner">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="./images/logo.png" alt="logo">
+            </a>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">About</a>
+                <a class="menu__link" href="#">service</a>
+                <a class="menu__link" href="#">work</a>
+                <a class="menu__link" href="#">blog</a>
+                <a class="menu__link" href="#">Contact</a>
+                <a class="menu__link" href="#">
+                  <img class="menu__link-img" src="./images/basket.png" alt="basket">
+                </a>
+                <a class="menu__link" href="#">
+                  <img class="menu__link-img" src="./images/search.png" alt="search">
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__nav_list">
-          <a class="header__nav_list-item" href="#">About</a>
-          <a class="header__nav_list-item" href="#">service</a>
-          <a class="header__nav_list-item" href="#">work</a>
-          <a class="header__nav_list-item" href="#">blog</a>
-          <a class="header__nav_list-item" href="#">Contact</a>
-          <a class="header__nav_list-item" href="#">
-            <img src="./images/basket.png" alt="basket">
-          </a>
-          <a class="header__nav_list-item" href="#">
-            <img src="./images/search.png" alt="search">
-          </a>
-        </nav>
+      </div>
+      <div class="header__content">
+        <h2 class="header__content-subtitle">Creative Template</h2>
+        <h1 class="header__content-title">Welcome to MoGo</h1>
+        <div class="header__content-separator"></div>
+        <button class="header__content-button">learn more</button>
+      </div>
+      <div class="header__wrap">
+        <a class="header__wrap-link" href="#">01 <span>about</span></a>
+        <a class="header__wrap-link" href="#">02 <span>services</span></a>
+        <a class="header__wrap-link" href="#">03 <span>team</span></a>
+        <a class="header__wrap-link" href="#">04 <span>work</span></a>
+        <a class="header__wrap-link" href="#">05 <span>people</span></a>
+        <a class="header__wrap-link" href="#">06 <span>blog</span></a>
+        <a class="header__wrap-link" href="#">07 <span>fotter</span></a>
       </div>
     </div>
-    <div class="header__content">
-      <h2 class="header__content_subtitle">Creative Template</h2>
-      <h1 class="header__content_title">Welcome to MoGo</h1>
-      <div class="header__content_separator"></div>
-      <button class="header__content_button">learn more</button>
-    </div>
-    <div class="header__wrap">
-      <a class="header__wrap_link" href="#">
-        <div class="header__wrap_link-item">01 what we do</div>
-      </a>
-      <a class="header__wrap_link" href="#">
-        <div class="header__wrap_link-item">02 team</div>
-      </a>
-      <a class="header__wrap_link" href="#">
-        <div class="header__wrap_link-item">03 work</div>
-      </a>
-      <a class="header__wrap_link" href="#">
-        <div class="header__wrap_link-item">04 latest blog</div>
-      </a>
-      <a class="header__wrap_link" href="#">
-        <div class="header__wrap_link-item">05 fotter</div>
-      </a>
   </header>
+
   <!-- Main -->
   <main class="main">
     <!-- About -->
     <section class="about">
       <div class="container">
         <div class="about__content">
-          <h4 class="about__content_text text">What we do</h4>
-          <h3 class="about__content_title title">story about us</h3>
-          <div class="about__content_separator separator"></div>
-          <h5 class="about__content_subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu
+          <h4 class="about__content-text text">What we do</h4>
+          <h3 class="about__content-title title">story about us</h3>
+          <div class="about__content-separator separator"></div>
+          <h5 class="about__content-subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu
             facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra
             dolor sit. Aliquet congue sit fermentum risus feugiat.</h5>
         </div>
@@ -232,7 +232,13 @@
           <div class="details-service__row">
             <div class="details-service__col">
               <details class="details-service__summary">
-                <summary class="details-service__summary_prof">photography</summary>
+                <summary class="details-service__summary_prof">
+                  <span>
+                    <svg aria-hidden="true" height="42" width="42" class="details-service-icon">
+                      <use href="./images/details-service/icons-1.svg#icons1Icon"></use>
+                    </svg>
+                  </span>photography
+                </summary>
                 <p class="details-service__summary_description details-service__summary_description-active">Lorem ipsum
                   dolor sit amet,
                   consectetur adipiscing elit. Eros,
@@ -245,7 +251,13 @@
             </div>
             <div class="details-service__col">
               <details class="details-service__summary">
-                <summary class="details-service__summary_prof">creativity</summary>
+                <summary class="details-service__summary_prof">
+                  <span>
+                    <svg aria-hidden="true" height="42" width="42" class="details-service-icon">
+                      <use href="./images/details-service/icons-2.svg#icons2Icon"></use>
+                    </svg>
+                  </span>creativity
+                </summary>
                 <p class="details-service__summary_description details-service__summary_description-active">Lorem ipsum
                   dolor sit amet,
                   consectetur adipiscing elit. Eros,
@@ -258,7 +270,13 @@
             </div>
             <div class="details-service__col">
               <details class="details-service__summary">
-                <summary class="details-service__summary_prof">web design</summary>
+                <summary class="details-service__summary_prof">
+                  <span>
+                    <svg aria-hidden="true" height="42" width="42" class="details-service-icon">
+                      <use href="./images/details-service/icons-3.svg#icons3Icon"></use>
+                    </svg>
+                  </span>web design
+                </summary>
                 <p class="details-service__summary_description details-service__summary_description-active">Lorem ipsum
                   dolor sit amet,
                   consectetur adipiscing elit. Eros,

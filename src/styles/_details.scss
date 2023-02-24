@@ -14,18 +14,21 @@
     display: flex;
     flex-direction: column;
     border: 1px solid #C6CBCD;
-
   }
 
   &__summary {
     display: flex;
+    min-width: 570px;
 
     &_prof {
       font-weight: 700;
       font-size: $font-size-md;
       text-transform: uppercase;
       color: $color-black;
-      padding: 1.85rem 12.147rem;
+      display: flex;
+      align-items: center;
+      gap: 42px;
+      padding: 0.857rem 0;
     }
 
     &_description {
@@ -42,25 +45,22 @@
   }
 }
 
-summary::-webkit-details-marker {
-  display: none
+.details-service__summary_prof::after {
+  content: url(/src/images/details-service/arrow_up.svg);
+  padding-top: 14px;
+display: flex;
+justify-content: space-between;
 }
 
-summary::after {
-  color: red;
-  float: right;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: -5px 10px 0 0;
-  padding: 0;
-  text-align: center;
-  width: 20px;
-}
-
-details[open] summary::after {
+.details-service__summary[open]>.details-service__summary_prof::after {
+  content: url(/src/images/details-service/arrow_down.svg);
 
 }
 
-details>summary {
-  list-style: none;
+
+
+.details-service-icon {
+  color: #95E1D3;
+  margin-left: 20px;
+  display: flex;
 }
