@@ -1,26 +1,22 @@
 .about {
-  &__content {
-    @include flex-box;
-  }
-
-  &__content_team {
+ &__content-team {
     display: flex;
     gap: 1.875rem;
     margin: 1rem 0 6.75rem 0;
   }
 
-  &__content_team-text {
+  &__content-text {
     font-weight: 500;
     font-size: $font-size-md;
     text-transform: uppercase;
     color: $color-white;
   }
 
-  &__content_team-project:hover &__content_team-bg {
+  &__content-project:hover &__content-bg {
     opacity: 1;
   }
 
-  &__content_team-project {
+  &__content-project {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -29,7 +25,7 @@
     cursor: pointer;
   }
 
-  &__content_team-image {
+  &__content-imag {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +34,7 @@
     aspect-ratio: 1 / 1;
   }
 
-  &__content_team-bg {
+  &__content-bg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,46 +47,19 @@
     opacity: 0;
   }
 
-  &__content_team-bg:hover {
+  &__content-bg:hover {
     transform: translate(-1rem, -1rem);
     transition: 0.5s ease-in-out;
   }
 
-  &__content_team-link {
+  &__content-link {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
 
-  &__content_team-icon {
+  &__content-icon {
     color: $color-white;
   }
-
-  &__footer {
-    background: #95E1D3;
-  }
-
-  &__footer_content {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  &__footer_content-text {
-    font-weight: 700;
-    font-size: 4rem;
-    color: $color-white;
-    display: flex;
-    flex-direction: column;
-    padding: 4.482rem 3.83rem;
-    border-left: 1px solid $color-white;
-    border-right: 1px solid $color-white;
-  }
-}
-
-.text-size {
-  font-weight: 400;
-  font-size: $font-size-sm;
 }

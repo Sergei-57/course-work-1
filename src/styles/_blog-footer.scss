@@ -1,0 +1,25 @@
+.blog-footer {
+  background: url(/src/images/blog/blog-footer.png);
+  position: relative;
+  padding: 2.625rem 0 2.625rem 0;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  &__content {
+    @include flex-box;
+    position: relative;
+  }
+
+  &__title {
+    color: #F38281;
+  }
+}

@@ -1,0 +1,37 @@
+.amazing-services {
+  &__separator {
+    margin-bottom: 5.5rem;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  &__col {
+    display: flex;
+    gap: 1.875rem;
+
+    &-profession {
+      max-width: 16.875rem;
+    }
+
+    &-position {
+      font-weight: 700;
+      font-size: $font-size-md;
+      text-transform: uppercase;
+      color: $color-black;
+      padding: 0.62rem 0;
+    }
+
+    &-description {
+      font-size: $font-size-sm;
+      color: $color-black;
+      padding: 1.04rem 0;
+      margin-bottom: 7.375rem;
+    }
+  }
+}

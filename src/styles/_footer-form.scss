@@ -1,0 +1,31 @@
+.footer-form {
+  display: flex;
+
+  &__email {
+    background: $color-white;
+    border: 1px solid #C6CBCD;
+    padding: 1.072rem 1.7rem;
+    font-size: $font-size-sm;
+    color: #C6CBCD;
+    text-align: center;
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: $font-size-sm;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    background: #95E1D3;
+    padding: 1.072rem 1.084rem;
+
+    &:hover {
+      background: #87D2C4;
+    }
+
+    &:active {
+      background: #5C958A;
+    }
+  }
+}

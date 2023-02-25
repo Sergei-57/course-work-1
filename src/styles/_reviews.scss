@@ -1,0 +1,52 @@
+.reviews {
+  background: #F8F8F8;
+
+  &__content {
+    display: flex;
+    gap: 2.8125rem;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+  }
+
+  &__icons {
+    color: #C6CBCD;
+  }
+
+  &__icon {
+    margin: 2.625rem 0 2.625rem 0;
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3125rem;
+    margin: 2.625rem 0 2.625rem 0;
+
+    &-text {
+      font-style: italic;
+      font-weight: 500;
+      font-size: $font-size-md;
+      color: #A9AFB1;
+    }
+
+    &-wrap {
+      display: flex;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    &-separator {
+      height: 4px;
+    }
+
+    &-name {
+      font-family: 'Kaushan Script';
+      font-size: 1.875rem;
+      color: #000000;
+    }
+  }
+}
