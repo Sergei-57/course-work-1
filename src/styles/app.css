@@ -789,6 +789,10 @@ body {
   gap: 1.875rem;
   margin-bottom: 7.125rem;
 }
+.details-service__image {
+  width: 100%;
+  height: 100%;
+}
 .details-service__row {
   display: flex;
   flex-direction: column;
@@ -797,48 +801,58 @@ body {
 .details-service__col {
   display: flex;
   flex-direction: column;
-  border: 1px solid #C6CBCD;
 }
 .details-service__summary {
   display: flex;
   min-width: 570px;
+  border: 1px solid #C6CBCD;
+}
+.details-service__summary ::-webkit-scrollbar {
+  width: 7px;
+  margin-right: 7px;
+}
+.details-service__summary ::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+.details-service__summary ::-webkit-scrollbar-thumb {
+  background: #95E1D3;
 }
 .details-service__summary_prof {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.963rem 0;
   font-weight: 700;
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #2D3033;
-  display: flex;
-  align-items: center;
-  gap: 42px;
-  padding: 0.857rem 0;
 }
 .details-service__summary_description {
   display: none;
   font-size: 1.125rem;
   color: #2D3033;
-  padding-left: 1.375rem;
+  padding: 0 5.3125rem 0 1.375rem;
   border-top: 1px solid #C6CBCD;
-}
-.details-service__summary_description-active {
   display: block;
+  overflow-y: scroll;
+  max-height: 163px;
 }
-
-.details-service__summary_prof::after {
-  content: url(/src/images/details-service/arrow_up.svg);
-  padding-top: 14px;
+.details-service__summary_icon {
+  color: #95E1D3;
+  margin-left: 1.125rem;
   display: flex;
-  justify-content: space-between;
 }
 
 .details-service__summary[open] > .details-service__summary_prof::after {
-  content: url(/src/images/details-service/arrow_down.svg);
+  content: url(/src/images/details-service/arrow_up.png);
 }
 
-.details-service-icon {
-  color: #95E1D3;
-  margin-left: 20px;
-  display: flex;
+.details-service__summary_prof::after {
+  content: url(/src/images/details-service/arrow_down.png);
+  padding-top: 12px;
+  position: relative;
+  right: 0;
+  top: 0;
 }
 
 .reviews {
