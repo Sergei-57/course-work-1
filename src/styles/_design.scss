@@ -4,6 +4,10 @@
   background: url(/src/images/design/design.png);
   position: relative;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   &:before {
     content: '';
     display: block;
@@ -30,12 +34,16 @@
   &__tablet-img {
     margin-bottom: 3.5625rem;
 
-    @media (max-width: 768px) {
-      max-width: 170%;
-      position: relative;
-      left: -106px;
-      margin-bottom: 1.5625rem;
-    }
+    // @media (max-width: 768px) {
+    //   max-width: 170%;
+    //   position: relative;
+    //   left: -106px;
+    //   margin-bottom: 1.5625rem;
+    // }
+
+    // @media (max-width: 576px) {
+    //   max-width: 140%;
+    // }
   }
 
   &__phone-img {
@@ -50,9 +58,13 @@
       right: 11rem;
     }
 
-    @media (max-width: 768px) {
-      right: 2.2rem;
-      top: 6.2rem;
-    }
+    // @media (max-width: 768px) {
+    //   right: 2.2rem;
+    //   top: 6.2rem;
+    // }
+
+    // @media (max-width: 576px) {
+    //   max-width: 140%;
+    // }
   }
 }

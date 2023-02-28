@@ -23,6 +23,10 @@
     }
 
     @media (max-width: 768px) {
+      object-fit: cover;
+    }
+
+    @media (max-width: 420px) {
       max-width: 288px;
       max-height: 142px;
       object-fit: cover;
@@ -51,6 +55,22 @@
 
     @media (max-width: 1024px) {
       min-width: 486px;
+    }
+
+    @media (max-width: 954px) {
+      min-width: 440px;
+    }
+
+    @media (max-width: 924px) {
+      min-width: 400px;
+    }
+
+    @media (max-width: 864px) {
+      min-width: 370px;
+    }
+
+    @media (max-width: 804px) {
+      min-width: 350px;
     }
 
     @media (max-width: 768px) {

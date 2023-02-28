@@ -6,6 +6,10 @@
   align-items: center;
   margin-bottom: 2.3125rem;
 
+  @media (max-width: 820px) {
+    max-width: 260px;
+  }
+
   &__text {
     font-style: italic;
     font-size: $font-size-xs;

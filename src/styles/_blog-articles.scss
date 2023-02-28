@@ -6,8 +6,12 @@
   gap: 1.975rem;
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    gap: 1px;
+  }
+
+  @media (max-width: 624px) {
     gap: 0;
+    flex-direction: column;
   }
 
   &__image {
@@ -32,6 +36,7 @@
     @media (max-width: 1024px) {
       font-size: $font-size-md;
     }
+
   }
 
   &__data span {
@@ -66,6 +71,10 @@
 
     @media (max-width: 1024px) {
       font-size: $font-size-sm;
+    }
+
+    @media (max-width: 624px) {
+      max-width: 370px;
     }
   }
 

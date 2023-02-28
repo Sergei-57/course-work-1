@@ -41,8 +41,8 @@
       max-width: 317px;
     }
 
-    @media (max-width: 768px) {
-      text-align: center;
+    @media (max-width: 820px) {
+      max-width: 260px;
     }
   }
 
@@ -57,8 +57,12 @@
       font-size: $font-size-sm;
     }
 
+    @media (max-width: 820px) {
+      max-width: 260px;
+    }
+
     @media (max-width: 768px) {
-      text-align: center;
+
     }
   }
 
