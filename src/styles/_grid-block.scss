@@ -1,3 +1,5 @@
+// grid-block
+
 .grid-block {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -5,7 +7,46 @@
   grid-template-areas:
     "item-1 item-2 item-3 item-4"
     "item-5 item-6 item-3 item-7";
-  margin-bottom: 5.25rem;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+      "item-1 item-3"
+      "item-2 item-3"
+      "item-4 item-3"
+      "item-5 item-6"
+      "item-7 item-7";
+
+    &__image-1 {
+      grid-area: item-1;
+    }
+
+    &__image-2 {
+      grid-area: item-2;
+    }
+
+    &__image-3 {
+      grid-area: item-3;
+    }
+
+    &__image-4 {
+      grid-area: item-4;
+    }
+
+    &__image-5 {
+      grid-area: item-5;
+    }
+
+    &__image-6 {
+      grid-area: item-6;
+    }
+
+    &__image-7 {
+      grid-area: item-7;
+    }
+  }
 
   &__image-1 {
     grid-area: item-1;
@@ -42,12 +83,20 @@
     color: $color-white;
     margin-top: 3.875rem;
     padding: 0.59rem 0;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-base;
+    }
   }
 
   &__subtitle {
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
     color: $color-white;
     padding: 0.21rem 0;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+    }
   }
 
   &__image:hover &__bg {
@@ -58,6 +107,14 @@
     position: relative;
     min-height: 350px;
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+      min-height: 256px;
+    }
+
+    @media (max-width: 768px) {
+      min-height: 152px;
+    }
   }
 
   &__cover {
@@ -84,6 +141,10 @@
     background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
     opacity: 0;
     transition: opacity .3s ease-in-out;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__bg:active {

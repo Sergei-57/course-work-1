@@ -1,15 +1,26 @@
+// reviews
+
 .reviews {
   background: #F8F8F8;
 
   &__content {
     display: flex;
     gap: 2.8125rem;
+
+    @media (max-width: 768px) {
+      gap: 0;
+    }
   }
 
   &__inner {
     display: flex;
     gap: 1.875rem;
     align-items: center;
+
+    @media (max-width: 768px) {
+      gap: 1.125rem;
+      flex-direction: column;
+    }
   }
 
   &__icons {
@@ -18,6 +29,28 @@
 
   &__icon {
     margin: 2.625rem 0 2.625rem 0;
+
+    @media (max-width: 1024px) {
+      max-width: 115px;
+      min-height: 115px;
+      margin: 1.75rem 0 1.75rem 0;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__image {
+    @media (max-width: 1024px) {
+      max-width: 115px;
+      min-height: 115px;
+      margin: 1.75rem 0 1.75rem 0;
+    }
+
+    @media (max-width: 768px) {
+      margin: 1.8125rem 0 2.5625rem 0;
+    }
   }
 
   &__comment {
@@ -26,27 +59,61 @@
     gap: 1.3125rem;
     margin: 2.625rem 0 2.625rem 0;
 
-    &-text {
-      font-style: italic;
-      font-weight: 500;
+    @media (max-width: 1024px) {
+      gap: 0.875rem;
+      margin: 1.75rem 0 1.75rem 0;
+    }
+
+    @media (max-width: 768px) {
+      gap: 0.875rem;
+      margin: 0 0 1.75rem 0;
+    }
+  }
+
+  &__text {
+    font-style: italic;
+    font-weight: 500;
+    font-size: $font-size-md;
+    color: #A9AFB1;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-base;
+    }
+
+    @media (max-width: 768px) {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      gap: 1.75rem;
+    }
+  }
+
+  &__separator {
+    height: 4px;
+
+    @media (max-width: 768px) {
+      max-width: 57px;
+    }
+  }
+
+  &__name {
+    font-family: 'Kaushan Script';
+    font-size: $font-size-lg;
+    color: #000000;
+
+    @media (max-width: 1024px) {
       font-size: $font-size-md;
-      color: #A9AFB1;
     }
 
-    &-wrap {
-      display: flex;
-      gap: 3.5rem;
-      align-items: center;
-    }
-
-    &-separator {
-      height: 4px;
-    }
-
-    &-name {
-      font-family: 'Kaushan Script';
-      font-size: 1.875rem;
-      color: #000000;
+    @media (max-width: 768px) {
+      font-size: $font-size-base;
     }
   }
 }

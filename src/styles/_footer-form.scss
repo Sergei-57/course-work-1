@@ -1,3 +1,5 @@
+// footer-form
+
 .footer-form {
   display: flex;
 
@@ -5,20 +7,30 @@
     background: $color-white;
     border: 1px solid #C6CBCD;
     padding: 1.072rem 1.7rem;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
     color: #C6CBCD;
     text-align: center;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+      padding: 0.604rem 0.313rem;
+    }
   }
 
   &__button {
     font-weight: 700;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
     display: flex;
     text-align: center;
     text-transform: uppercase;
     color: $color-white;
     background: #95E1D3;
     padding: 1.072rem 1.084rem;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+      padding: .604rem 2.13rem;
+    }
 
     &:hover {
       background: #87D2C4;

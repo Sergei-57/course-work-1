@@ -1,6 +1,20 @@
+// logo
+
 .logo {
   &__img {
     color: $color-white;
     position: relative;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 184px;
+  }
+
+  @media (max-width: 832px) {
+    max-width: 154px;
+  }
+
+  @media (max-width: 789px) {
+    max-width: 134px;
   }
 }

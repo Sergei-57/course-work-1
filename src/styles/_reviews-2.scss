@@ -1,4 +1,14 @@
+// reviews-2
+
 .reviews-2 {
   background: $color-white;
   margin: 5.25rem 0;
+
+  @media (max-width: 1024px) {
+    margin: 3.625rem 0;
+  }
+
+  @media (max-width: 768px) {
+    margin: 1.8125rem 0;
+  }
 }

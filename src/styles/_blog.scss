@@ -1,9 +1,19 @@
+// blog
+
 .blog {
-  &__content {
+  &__intro {
     margin-top: 2.625rem;
+
+    @media (max-width: 768px) {
+      margin-top: 1.75rem;
+    }
   }
 
   &__separator {
     margin-bottom: 2.625rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 2.25rem;
+    }
   }
 }

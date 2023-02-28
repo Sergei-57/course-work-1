@@ -1,3 +1,5 @@
+// footer-media
+
 .footer-media {
   display: flex;
   justify-content: space-between;
@@ -6,9 +8,14 @@
 
   &__text {
     font-style: italic;
-    font-size: 0.8125rem;
+    font-size: $font-size-xs;
     color: #C6CBCD;
     margin-right: 1.875rem;
+
+    @media (max-width: 1024px) {
+      font-size: 0.75rem;
+      margin-right: 1.25rem;
+    }
   }
 
   &__link:hover {

@@ -1,14 +1,20 @@
+// nav menu
+
 .menu {
   display: flex;
   align-items: center;
 
   &__link {
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: $font-size-sm;
     text-transform: uppercase;
     color: $color-white;
     position: relative;
     padding: 0 1.4rem;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-xs;
+    }
   }
 
   &__link::after {
@@ -33,5 +39,28 @@
 
   &__link:active {
     color: #F4BF87;
+  }
+
+  &__img {
+    @media (max-width: 1024px) {
+      max-width: 1rem;
+      min-height: 1rem;
+    }
+  }
+
+  &__list {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+      color: $color-white;
+      position: relative;
+    }
   }
 }

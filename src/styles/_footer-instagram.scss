@@ -1,3 +1,5 @@
+// footer-instagram
+
 .footer-instagram {
   &__images {
     display: grid;
@@ -50,10 +52,19 @@
   }
 
   &__text {
-    font-size: 0.8125rem;
+    font-size: $font-size-xs;
     text-decoration-line: underline;
     text-transform: uppercase;
     color: $color-black;
     padding: 2.285rem 0;
+
+    @media (max-width: 1024px) {
+      font-size: 0.75rem;
+      padding: 0.825rem 0;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 }

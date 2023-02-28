@@ -1,24 +1,57 @@
+// futures
+
 .futures {
   background: #95E1D3;
 
   &__inner {
     @include flex-box;
     flex-direction: row;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: $font-size-xxl;
     color: $color-white;
     display: flex;
     flex-direction: column;
     padding: 4.482rem 3.83rem;
     border-left: 1px solid $color-white;
     border-right: 1px solid $color-white;
+
+    @media (max-width: 1024px) {
+      font-size: 3rem;
+      padding: 1.775rem 3.83rem;
+    }
+
+    @media (max-width: 924px) {
+      padding: 1.5rem 3.25rem;
+    }
+
+    @media (max-width: 824px) {
+      padding: 1.2rem 3rem;
+    }
+
+    @media (max-width: 768px) {
+      border-bottom: 1px solid $color-white;
+      border-left: none;
+      border-right: none;
+    }
+
+    @media (max-width: 444px) {
+      max-width: 170px;
+    }
+
+    @media (max-width: 370px) {
+      max-width: 144px;
+    }
   }
 
   &__item span {
     font-weight: 400;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
   }
 }

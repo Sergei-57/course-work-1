@@ -1,3 +1,5 @@
+// clients
+
 .clients {
   background: url(/src/images/clients/people.png);
   position: relative;
@@ -13,60 +15,19 @@
     background: rgba(255, 255, 255, 0.9);
   }
 
-  &__content {
+  &__intro {
     position: relative;
   }
 
   &__separator {
     margin-bottom: 2.625rem;
-  }
 
-  &__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.125rem;
-    justify-content: space-between;
-    position: relative;
-    padding-bottom: 2.625rem;
-
-    &-block {
-      display: flex;
-      gap: 3.125rem;
+    @media (max-width: 1024px) {
+      margin-bottom: 1.75rem;
     }
 
-    &-image {
-      height: 50%;
-    }
-
-    &-col {
-      display: flex;
-      flex-direction: column;
-      max-width: 370px;
-
-      &_name {
-        font-weight: 700;
-        font-size: $font-size-md;
-        text-transform: uppercase;
-        color: $color-black;
-        padding: 0.65rem 0;
-      }
-
-      &_profession {
-        font-size: $font-size-sm;
-        text-transform: uppercase;
-        color: $color-black;
-      }
-
-      &_separator {
-        max-width: 70px;
-        border: 4px solid #F38281;
-        margin: 2rem 0;
-      }
-
-      &_text {
-        font-size: $font-size-sm;
-        color: $color-black;
-      }
+    @media (max-width: 768px) {
+      margin-bottom: 1.8125rem;
     }
   }
 }

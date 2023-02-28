@@ -1,17 +1,42 @@
+// details-service
+
 .details-service {
   display: flex;
   gap: 1.875rem;
   margin-bottom: 7.125rem;
 
+  @media (max-width: 1024px) {
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   &__image {
     width: 100%;
     height: 100%;
+
+    @media (max-width: 1024px) {
+      max-width: 50%;
+      max-height: 50%;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 288px;
+      max-height: 142px;
+      object-fit: cover;
+    }
   }
 
   &__row {
     display: flex;
     flex-direction: column;
     gap: 1.375rem;
+
+    @media (max-width: 1024px) {
+      gap: 1.25rem;
+    }
   }
 
   &__col {
@@ -23,6 +48,14 @@
     display: flex;
     min-width: 570px;
     border: 1px solid #C6CBCD;
+
+    @media (max-width: 1024px) {
+      min-width: 486px;
+    }
+
+    @media (max-width: 768px) {
+      min-width: 288px;
+    }
 
     ::-webkit-scrollbar {
       width: 7px;
@@ -46,17 +79,31 @@
       font-size: $font-size-md;
       text-transform: uppercase;
       color: $color-black;
+
+      @media (max-width: 1024px) {
+        font-size: $font-size-base;
+        padding: 0.569rem 0;
+      }
+      @media (max-width: 768px) {
+        font-size: $font-size-sm;
+        padding: 0.569rem 0;
+      }
     }
 
     &_description {
       display: none;
-      font-size: $font-size-sm;
+      font-size: $font-size-base;
       color: $color-black;
       padding: 0 5.3125rem 0 1.375rem;
       border-top: 1px solid #C6CBCD;
       display: block;
       overflow-y: scroll;
       max-height: 163px;
+
+      @media (max-width: 1024px) {
+        font-size: $font-size-sm;
+        max-height: 138px;
+      }
     }
 
     &_icon {

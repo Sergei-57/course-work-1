@@ -1,7 +1,14 @@
+// blog-articles
+
 .blog-articles {
   display: flex;
   justify-content: center;
   gap: 1.975rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+  }
 
   &__image {
     margin-bottom: -2rem;
@@ -9,7 +16,7 @@
 
   &__data {
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: $font-size-xl;
     display: flex;
     align-items: center;
     text-align: center;
@@ -21,10 +28,23 @@
     position: relative;
     top: -3.75rem;
     left: -0.875rem;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-md;
+    }
   }
 
   &__data span {
-    font-size: $font-size-sm;
+    font-weight: 500;
+    font-size: $font-size-base;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+    }
   }
 
   &__title {
@@ -33,12 +53,20 @@
     text-transform: uppercase;
     color: $color-black;
     padding: 0.275rem 0;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-base;
+    }
   }
 
-  &__tetx {
-    font-size: $font-size-sm;
+  &__text {
+    font-size: $font-size-base;
     color: $color-black;
     margin-bottom: 1.375rem;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+    }
   }
 
   &__item {

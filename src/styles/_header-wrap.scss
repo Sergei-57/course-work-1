@@ -1,3 +1,5 @@
+// header-wrap
+
 .header-wrap {
   position: relative;
   display: flex;
@@ -5,13 +7,33 @@
   align-items: center;
   gap: 1.875rem;
 
+  @media (max-width: 1024px) {
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 768px) {
+    overflow-x: scroll;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: center;
+  }
+
   &__link {
     border-top: 4px solid $color-white;
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: $font-size-xl;
     text-transform: uppercase;
     color: $color-white;
     padding: 1.07rem 0;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-md;
+      padding: 0.713rem 0;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 
   &__link:hover {
@@ -20,6 +42,11 @@
 
   &__link span {
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: $font-size-base;
+
+    @media (max-width: 1024px) {
+      font-size: $font-size-sm;
+    }
   }
 }
+
