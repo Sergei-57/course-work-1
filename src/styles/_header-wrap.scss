@@ -3,7 +3,7 @@
 .header-wrap {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1.875rem;
 
@@ -13,9 +13,12 @@
 
   @media (max-width: 768px) {
     overflow-x: scroll;
-    justify-content: flex-start;
     gap: 1rem;
     text-align: center;
+  }
+
+  @media (max-width: 624px) {
+    justify-content: flex-start;
   }
 
   &__link {
@@ -49,4 +52,3 @@
     }
   }
 }
-

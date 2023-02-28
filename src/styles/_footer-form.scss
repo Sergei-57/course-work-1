@@ -11,6 +11,15 @@
     color: #C6CBCD;
     text-align: center;
 
+    &:hover {
+      border: 1px solid #F38281;
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 12px 16px 0 #95E1D3, 0 17px 50px 0 #95E1D3;
+    }
+
     @media (max-width: 1024px) {
       font-size: $font-size-sm;
       padding: 0.604rem 0.313rem;

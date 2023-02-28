@@ -12,6 +12,10 @@
     gap: 1.75rem;
   }
 
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
   &__block {
     display: flex;
     gap: 3.125rem;
